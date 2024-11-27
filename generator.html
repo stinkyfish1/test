@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velg Mat</title>
+    <link rel="stylesheet" href="style-generator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Velg din mat</h1>
+        <div class="form-container">
+            <div class="kategori-seksjon">
+                <h2>Kategori</h2>
+                <label>
+                    <input type="checkbox" name="kategori" value="Vegansk">
+                    Vegansk
+                </label>
+                <label>
+                    <input type="checkbox" name="kategori" value="Kjøtt">
+                    Kjøtt
+                </label>
+                <label>
+                    <input type="checkbox" name="kategori" value="Fisk">
+                    Fisk
+                </label>
+            </div>
+            <div class="dropdown-seksjon">
+                <label for="sultnivå">Hvor sulten er du?</label>
+                <select id="sultnivå">
+                    <option value="Lett sulten">Lett sulten</option>
+                    <option value="Sulten">Sulten</option>
+                    <option value="Svært sulten">Svært sulten</option>
+                </select>
+            </div>
+            <div class="dropdown-seksjon">
+                <label for="måltidstype">Hva slags måltid ser du etter?</label>
+                <select id="måltidstype">
+                    <option value="Frokost">Frokost</option>
+                    <option value="Lunsj">Lunsj</option>
+                    <option value="Middag">Middag</option>
+                    <option value="Snack">Snack</option>
+                </select>
+            </div>
+            <button id="hentRetter">Hent Retter</button>
+        </div>
+        <div id="retter"></div>
+    </div>
+
+    <script src="generator.js"></script>
+</body>
+</html>
